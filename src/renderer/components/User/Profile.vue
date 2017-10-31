@@ -40,10 +40,10 @@
       </ul>
     </header>
     <section
-      class="post-grid posts Grid"
+      class="Grid post-grid posts"
       v-if="typeof posts !== 'undefined'">
       <article
-        class="post Grid-cell"
+        class="Grid-cell--1of3 post"
         v-for="(post, i) of posts"
         :key="i">
         <div v-if="typeof post !== 'undefined'" class="post-content" :style="{ 'background-image': `url('${post.images[0].url}')` }" @click="log(post)">
